@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-4 15:59:52 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="vo.UserInfo" table="user_info" catalog="carrental">
+        <id name="userId" type="java.lang.Integer">
+            <column name="UserID" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="string">
+            <column name="UserName" length="30" />
+        </property>
+        <property name="userPwd" type="string">
+            <column name="UserPwd" length="30" />
+        </property>
+        <property name="gender" type="java.lang.Integer">
+            <column name="Gender" />
+        </property>
+        <property name="picture" type="binary">
+            <column name="Picture" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="40" />
+        </property>
+        <property name="phoneNum" type="string">
+            <column name="PhoneNum" length="30" />
+        </property>
+        <property name="address" type="string">
+            <column name="Address" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
