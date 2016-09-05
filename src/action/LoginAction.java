@@ -26,6 +26,7 @@ public class LoginAction implements Action
     UserInfoDAO userInfoDao = new UserInfoDAO();
     String userName= "";
     String pwd = "";
+    String test = "";
     
 	@Override
 	public String execute() throws Exception
